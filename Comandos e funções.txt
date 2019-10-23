@@ -1,3 +1,7 @@
+Nome: Marco Aurélio Ferreira da Silva       - 150005186
+Nome: Leonardo Vinícius Macedo dos Santos   - 130003300
+
+
 Comando sort:
     Função:
         O comando 'sort' tem a função de fazer a ordenação das linhas do conteúdo de um dado arquivo de texto.
