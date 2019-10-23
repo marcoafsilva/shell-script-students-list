@@ -1,0 +1,70 @@
+Comando sort:
+    Função:
+        O comando 'sort' tem a função de fazer a ordenação das linhas do conteúdo de um dado arquivo de texto.
+        
+    Sintaxe:
+        -> sort [ARGUMENTOS] [ARQUIVO]
+
+    Atributos:
+        - r = Ordenar de forma reversa;
+        - M = Ordenar por mês ('JAN', 'FEV', ... 'DEZ')
+        - n = Ordenar de forma numérica 
+        - R = Ordenar de forma aleatória
+        Entre vários outros argumentos.
+
+
+Comando grep:
+    Função:
+        O comando 'grep' tem a função de buscar padrões fornecidos pelo usuário dentro de arquivos de texto, lista de arquivos, entre outros.
+    
+    Sintaxe:
+        -> grep [ARGUMENTOS] [PADRÃO_DE_BUSCA] [ARQUIVO]
+    
+    Atributos:
+        - G = Buscar padrões por meio de uma simples expressão regular (RegExp);
+        - F = Buscar padrões por meio de uma string fixa;
+        - i = Ignorar caracteres em maiúsculo ou minúsculo;
+        - c = Contar quantas ocorrências houveram para a busca;
+        Entre vários outros argumentos.
+
+
+Comando sed:
+    Função:
+        O comando 'sed' tem a função de trabalhar como um editor de texto não interativo. Com ele é possível realizar alteração, remoção e inserção de novos caracteres, strings e frases inteiras contidos em um certo arquivo ou até em funções que funcionam em tempo de execução. Com ele também é possível utilizar expressões regulares (RegExp) para identificar e/ou alterar textos em um dado arquivo.
+
+    Sintaxe:
+        -> sed [ARGUMENTOS] 
+    
+    Atributos:
+        - i = Executa alterações no arquivo;
+        - e = Exibe na tela sem realizar alterações no arquivo;
+        - s = Substitui um trecho de texto por outro;
+        Entre vários outros comandos.
+
+    
+Comando awk:
+    Função:
+        O comando 'awk' não é só um comando, ele é uma linguaguem de programação. Ele se baseia no princípio em procurar em um ou mais arquivos por linhas que contenham um determinado padrão, e, quando encontrar, executar uma determinada ação. O comando 'awk' é muito utilizado em shell script pois é uma ferramenta extremamente poderosa.
+
+    Sintaxe:
+        -> awk `
+                /padrão1/ {ação1}
+                /padrao2/ {ação2}
+            ` arquivo1 arquivo2 arquivo3
+        PS: Os campos "padrão" são expressões regulares.
+
+
+    Atributos:
+        -F = Informar qual o caractere que é utilizado como separador de campo;
+        Entre vários outros comandos.
+
+Comando '>' e '>>':
+    Função: 
+        O comando '>' é utilizado para reescrever um arquivo com um conteúdo vindo de outro comando, arquivo, etc.
+        Já o comando '>>' tem a mesma função do '>', porém seu diferencial é de que ele não reescreve o arquivo por inteiro, mas sim concatena o conteúdo desejado junto com o conteúdo já presente no arquivo.
+
+    Sintaxe:
+        -> history > historico_de_comandos.txt
+        -> history >> historico_de_comandos.txt
+
+    
