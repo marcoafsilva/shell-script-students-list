@@ -1,5 +1,6 @@
 # !/bin/bash
 
+clear
 
 ARQUIVO_ALUNOS='alunos.txt'
 
@@ -23,12 +24,11 @@ menu()
 {
     clear
 
-    group
-
-    echo "Olá!"
-    echo "Escolha uma opção abaixo para este script executar! =)"
+    echo
+    echo "  Olá!"
+    echo "  Escolha uma opção abaixo para este script executar! =)"
     echo 
-    echo "====="
+    echo "  ====="
     echo
     echo "  1 - Ordenar por ordem alfabética os nomes do arquivo e exportar em um novo arquivo"
     echo "  2 - Encontrar o nome de um aluno fornecendo o RA"
@@ -147,6 +147,11 @@ main()
         exitProgram
     fi
 }
+
+
+group
+read -p "Tecle para continuar... "
+clear
 
 OP=0
 while :; do
